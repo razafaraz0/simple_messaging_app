@@ -48,29 +48,29 @@ CREATE TABLE messagesTable (
 
 The entry point for this project is the public/*index.php*. This */public* will also act as a security feature as only this directory will be accessible by all browsers, search engines, and API clients. All other folders are not public and will not be accessible online.  Below are the folders of the application:
 
-   ## Config
+   ### Config
 
    This Folder contains all the configurations of the applications and related services. It should also be noted that since we are using the **Slim 4** framework, all middleware, routing, and dependency injections are handled by it.
 
-   ## Action
+   ### Action
    This class receives the request from the routes. They then parse the data and forward it to the relevant functions in the **Service** folder.
 
-   ## Domain
+   ### Domain
    The **Domain** folder contains the files that handle the complex business use-cases. To reduce complexity even further, this directory also includes subdirectories called **User** and **Message** to cater to individual stakeholders
 
-   ### Data
+   #### Data
    DataBase Objects are defined here.
 
-   ### Repository
+   #### Repository
    The following folder is responsible to manage the  communication between the databases with the data logic.
 
-   ### Service
+   #### Service
    These take input from the `Action`, deal with the repository, create a Data object, and return it back to the `Action`. In short, they deal with all the business logic.
 
-   ## Middleware
+   ### Middleware
    This Folder includes handling exceptions thrown by the application.
 
-   ## Response
+   ### Response
    Includes appropirate response.
 
 

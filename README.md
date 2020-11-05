@@ -24,6 +24,7 @@ PHP server is now running on `localhost:3000`.
 ## Routes
 Routes are defined in **config\routes.php**.
 
+
 ## Database
 The Schema used to create the sqllite3 database:
 ```
@@ -194,7 +195,7 @@ Response:
 ```
 
 ### 4) [GET] localhost:3000/getMessages/{RECIPIENT} 
-**Note** {RECIPIENT}:
+**Note** {RECIPIENT} = null 
 
 On missing recipent
 Response:
